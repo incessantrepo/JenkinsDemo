@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e15f-291f-8000-d194-01ef9001ef90_100026</versionUuid>
+    <rulesFolder>
+        <name>Quick Apps Rules and Constants</name>
+        <uuid>SYSTEM_RULE_FOLDER_QUICK_APPS</uuid>
+        <description>Rules and constants folders created by the quick apps designer are placed in this folder</description>
+        <parentUuid>SYSTEM_RULES_ROOT</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+    </rulesFolder>
+    <roleMap public="true">
+        <role inherit="false" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="authors">
+            <users/>
+            <groups>
+                <groupUuid>SYSTEM_GROUP_ROLE_QUICK_APP_CREATORS</groupUuid>
+            </groups>
+        </role>
+        <role inherit="false" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_69380"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_80361"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_89562"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_100026"/>
+    </history>
+</contentHaul>

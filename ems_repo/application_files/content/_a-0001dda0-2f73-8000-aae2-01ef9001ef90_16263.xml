@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e15f-291f-8000-d194-01ef9001ef90_100223</versionUuid>
+    <rule>
+        <name>EMS_GetAllStatus</name>
+        <uuid>_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16263</uuid>
+        <description>Returns all status options for EMS</description>
+        <parentUuid>41327b2c-a17c-4e00-8f1f-6e5ff91cb2fb</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>cast(
+  'type!{urn:com:appian:types:EMS}EMS_Status?list',
+  #"SYSTEM_SYSRULES_queryEntity"(
+    entity: #"_a-0001dda0-2f73-8000-aae2-01ef9001ef90_16258",
+    query: #"SYSTEM_SYSRULES_query"(
+      pagingInfo: #"SYSTEM_SYSRULES_pagingInfo"(
+        1,
+        - 1,
+        #"SYSTEM_SYSRULES_sortInfo"(
+          "order",
+          true
+        )
+      )
+    )
+  ).data
+)
+</definition>
+        <preferredEditor>legacy</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="false">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <typedValue>
+        <type>
+            <name>RuleTestConfig?list</name>
+            <namespace>http://www.appian.com/ae/types/2009</namespace>
+        </type>
+        <value>
+            <el>
+                <a:name>Check count of values</a:name>
+                <a:assertions>
+                    <a:expectedOutput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <a:resultAssertions>count(test!output)=2</a:resultAssertions>
+                </a:assertions>
+            </el>
+            <el>
+                <a:name>CheckOfTest1</a:name>
+                <a:assertions>
+                    <a:expectedOutput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <a:resultAssertions>true()</a:resultAssertions>
+                </a:assertions>
+            </el>
+            <el>
+                <a:name>CheckOfTest2</a:name>
+                <a:assertions>
+                    <a:expectedOutput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <a:resultAssertions>false()</a:resultAssertions>
+                </a:assertions>
+            </el>
+            <el>
+                <a:name>CheckOfTest3</a:name>
+                <a:assertions>
+                    <a:expectedOutput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <a:resultAssertions>now() = now()</a:resultAssertions>
+                </a:assertions>
+            </el>
+            <el>
+                <a:name>CheckOfTest4</a:name>
+                <a:assertions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </el>
+            <el>
+                <a:name>CheckOfTest5</a:name>
+                <a:assertions>
+                    <a:expectedOutput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <a:resultAssertions>loggedInUser() = loggedInUser()
+</a:resultAssertions>
+                </a:assertions>
+            </el>
+            <el>
+                <a:name>CheckOfTest6</a:name>
+                <a:assertions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </el>
+        </value>
+    </typedValue>
+    <history>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_69547"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_80540"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_89755"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_100223"/>
+    </history>
+</contentHaul>

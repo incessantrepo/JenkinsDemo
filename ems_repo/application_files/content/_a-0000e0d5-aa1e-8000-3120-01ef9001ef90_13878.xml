@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e15f-291f-8000-d194-01ef9001ef90_102600</versionUuid>
+    <rule>
+        <name>TestFolderRule</name>
+        <uuid>_a-0000e0d5-aa1e-8000-3120-01ef9001ef90_13878</uuid>
+        <description>trial</description>
+        <parentUuid>5dc87a26-e9e7-4449-b03a-da1a577e6c21</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>"testmodifednowalso"</definition>
+        <preferredEditor>legacy</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_71503"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_82660"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_92033"/>
+        <historyInfo versionUuid="_a-0000e15f-291f-8000-d194-01ef9001ef90_102600"/>
+    </history>
+</contentHaul>

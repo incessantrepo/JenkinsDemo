@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webApiHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>5ca7af3e-35b5-4841-8135-51551463eefb</versionUuid>
+    <webApi a:uuid="177e8c58-77cc-4d43-9166-e348fa082225" name="EMS_New_WebAPI">
+        <a:description></a:description>
+        <a:expression>#"SYSTEM_SYSRULES_httpResponse_v1"(
+  /*
+  * The 'statusCode' parameter is a number that represents the HTTP status code
+  * of the response. If no status code is specified, a default of '200' is used,
+  * meaning that the request was successful.
+  */
+  statusCode: 200,
+
+  /*
+  * The 'headers' parameter is a list of HTTP headers to include on the response.
+  * HTTP headers should be built with 'a!httpHeader()'.
+  */
+  headers: {},
+
+  /*
+  * The 'body' parameter is the text that will be included in the HTTP response's
+  * body.
+  */
+  body: "Hello World"
+)</a:expression>
+        <a:urlAlias>sqy7BA</a:urlAlias>
+        <a:httpMethod>GET</a:httpMethod>
+        <a:system>false</a:system>
+    </webApi>
+    <roleMap/>
+    <typedValue>
+        <type>
+            <name>WebApiRequest?list</name>
+            <namespace>http://www.appian.com/ae/types/2009</namespace>
+        </type>
+        <value>
+            <el>
+                <a:path/>
+                <a:body/>
+            </el>
+        </value>
+    </typedValue>
+    <history>
+        <historyInfo versionUuid="82c0a050-4bcc-4bb6-b678-f207a311b3c0"/>
+        <historyInfo versionUuid="5ca7af3e-35b5-4841-8135-51551463eefb"/>
+    </history>
+</webApiHaul>
